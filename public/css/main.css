@@ -1,0 +1,25 @@
+.profile-img{
+	margin-top: 30px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.profile-name{
+	margin-top: 25px;
+	color: #fff;
+}
+.profile-title{
+	background-color: #fff176;
+	padding: 5px 10px 5px 10px;
+	border-radius: 4px;
+}
+.main-bg{
+	background-color: #3f51b5;
+}
+
+.nav-option{
+	font-size: 40px;
+	font-weight: 300;
+	color: #fff;
+}

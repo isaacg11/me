@@ -1,0 +1,32 @@
+<html ng-app="master">
+  <head>
+    <meta charset="utf-8">
+    <title>Isaac Grey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="public/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+  <ui-view></ui-view>
+
+    <!--LIBRARIES/FRAMEWORKS/WRAPPERS -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="./bower_components/angular-stamplay/angular-stamplay.js">
+    </script>
+    <!--STAMPLAY SDK -->
+    <script src="https://drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/2.0.7/stamplay.min.js"></script>
+    <script>
+      Stamplay.init('isaacgrey');
+    </script>
+
+    <!--APP SCRIPTS -->
+    <script src="./public/app.js"></script>
+    <script src="./public/controllers/homeCtrl.js"></script>
+
+  </body>
+</html>

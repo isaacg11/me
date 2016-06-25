@@ -1,0 +1,10 @@
+{
+  "appId": "isaacgrey",
+  "apiKey": "726ed56123952ab077714240e00f8d6c97fa843517a75bfd2fd764ea02f28cf6",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
