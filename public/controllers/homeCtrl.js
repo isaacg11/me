@@ -19,7 +19,9 @@
     )
   {
 
-    $scope.hello = "hello world";
+    $scope.test = function() {
+      alert('blah!');
+    }
 
   }
   })();
