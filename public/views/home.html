@@ -40,7 +40,7 @@
 
 	<!-- middle section of page -->
 
-	<!-- headers -->
+	<!-- aboutme/twitter headers -->
 	<div class="row">
 		<div class="col s2 white">.</div>
 		<div class="col s2">
@@ -58,14 +58,12 @@
 		<div class="col s2 white">.</div>
 	</div>
 
-	<!-- description/timeline -->
+	<!-- aboutme/twitter description/timeline -->
 	<div class="row">
-		<!-- desription -->
 		<div class="col s2 white">.</div>
 		<div class="col s5">
 			<p class="aboutme-description">Hello! I'm <b>Isaac Grey</b> and I am a <b>Website and Application Developer</b> based in Los Angeles, CA. I enjoy building clean, useable software. Shoot me an email if you want to talk over coffee or Skype.</p>
 		</div>
-		<!-- tweet timeline -->
 		<div class="col s3 no-padding-sides">
 			<div class="z-depth-1">
 				<a 
@@ -93,7 +91,46 @@
 			</div>
 		</div>
 		<div class="col s2 white">.</div>
+		<div class="col s4 white">.</div>
+		<div class="col s4 center">
+			<a 
+				class="waves-effect waves-light btn-large repo-btn" 
+				href="https://github.com/isaacg11" 
+				target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i> All Repositories
+			</a>
+		</div>
+		<div class="col s4 white">.</div>
 	</div>
 
+	<!-- my skills -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-bolt small" aria-hidden="true"></i><span class="header-aboutme">My Skills</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8">
+			<div class="flex-container">
+				<div ng-repeat="s in skills" class="task-col z-depth-1">
+    				<div class="card-image center">
+              			<img ng-src="{{s.image}}" class="skills-img">
+              			<span class="skills-title">{{s.title}}</span>
+            		</div>
+            		<div class="skills-description">
+              			<p class="skills-details">{{s.description}}</p>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
 
 </div>
