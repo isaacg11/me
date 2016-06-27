@@ -114,7 +114,6 @@
 		</div>
 		<div class="col s2 white">.</div>
 	</div>
-
 	<div class="row">
 		<div class="col s2 white">.</div>
 		<div class="col s8">
@@ -126,6 +125,140 @@
             		</div>
             		<div class="skills-description">
               			<p class="skills-details">{{s.description}}</p>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+
+	<!-- my skills -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-info small" aria-hidden="true"></i><span class="header-aboutme">Fun Facts</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row center">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-github medium" aria-hidden="true"></i>
+				<p class="facts-details">{{repocount}}</p>
+				<p class="facts-description">Github Repos</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-pencil-square-o medium" aria-hidden="true"></i>
+				<p class="facts-details">50</p>
+				<p class="facts-description">Blogs written</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-clock-o medium" aria-hidden="true"></i>
+				<p class="facts-details">0</p>
+				<p class="facts-description">Hours of sleep</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-coffee medium" aria-hidden="true"></i>
+				<p class="facts-details">1,000,001</p>
+				<p class="facts-description">Cups of coffee</p>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row center">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-youtube-square medium" aria-hidden="true"></i>
+				<p class="facts-details">98</p>
+				<p class="facts-description">Youtube videos</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-globe medium" aria-hidden="true"></i>
+				<p class="facts-details">2</p>
+				<p class="facts-description">Countries traveled</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-tree medium" aria-hidden="true"></i>
+				<p class="facts-details">4</p>
+				<p class="facts-description">Mountains snowboarded</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-television medium" aria-hidden="true"></i>
+				<p class="facts-details">999</p>
+				<p class="facts-description">Hours watching Netflix</p>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+
+	<!-- my blogs -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-pencil small" aria-hidden="true"></i><span class="header-aboutme">Latest Blogs</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8 center">
+			<div class="flex-container">
+				<div ng-repeat="b in blogs" class="task-col-6 tutorial">
+    				<div class="card-image center">
+              			<img 
+              				ng-src="{{b.image}}" 
+              				class="tutorial-img" 
+              				title="{{b.title}}"
+              				ng-click="goToBlog(b.url)"/>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+
+	<!-- Videos -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-play-circle small" aria-hidden="true"></i><span class="header-aboutme">My Videos</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8 center">
+			<div class="flex-container">
+				<div ng-repeat="v in videos" class="task-col-6 tutorial">
+    				<div class="card-image center">
+              			<img 
+              				ng-src="{{v.image}}" 
+              				class="tutorial-img" 
+              				title="{{v.title}}"
+              				ng-click="goToVideo(v.url)"/>
             		</div>
   				</div>
 			</div>

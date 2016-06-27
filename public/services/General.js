@@ -28,6 +28,13 @@
           q.resolve(res);
         });
         return q.promise;
+      },
+      getRepoCount : function(){
+        var q = $q.defer();
+        $http.get('https://api.github.com/users/isaacg11/repos?per_page=100').then(function(res) {
+          q.resolve(res);
+        });
+        return q.promise;
       }
 	};
 }

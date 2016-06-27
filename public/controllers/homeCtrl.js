@@ -93,6 +93,83 @@
 
     $scope.skills = my_skills;
 
+    //load fun facts on page load
+    General.getRepoCount().then(function(res){
+      $scope.repocount = res.data.length;
+    })
+
+    //load blogs on page load
+    var my_blogs = [
+      {
+        image: '/public/images/mailchimp-fb-sync.png',
+        title: 'Synchronize your MailChimp lists with custom Facebook Audiences. Automatically.',
+        url: 'https://blog.stamplay.com/synchronize-your-mailchimp-lists-with-custom-facebook-audiences-automatically-2/'
+      },
+      {
+        image: '/public/images/Native-language-translator TN.png',
+        title: 'How To Translate Your Customer’s Messages Into Your Native Language.',
+        url: 'https://blog.stamplay.com/how-to-translate-your-customers-messages-into-your-native-language/'
+      },
+      {
+        image: '/public/images/dish.png',
+        title: 'How I launched my new food review iOS app 50% faster.',
+        url: 'https://blog.stamplay.com/how-i-launched-my-new-food-review-ios-app-50-faster/'
+      },
+      {
+        image: '/public/images/ionic-fb-login.png',
+        title: 'How To Add Facebook Social Login To Your Ionic App.',
+        url: 'https://blog.stamplay.com/how-to-add-facebook-social-login-to-your-ionic-app/'
+      },
+      {
+        image: '/public/images/screendy-mapme TN.png',
+        title: 'Build an end-to-end mobile app without coding using ScreenDy and Stamplay.',
+        url: ''
+      }
+
+    ];
+
+    $scope.blogs = my_blogs;
+
+    //navigate to blog
+    $scope.goToBlog = function(url) {
+      window.location = url;
+    }
+
+    //load videos on page load
+    var my_videos = [
+      {
+        image: '/public/images/unified-notification-app TN.png',
+        title: 'How To Create a Unified Notification App With Cisco Spark API',
+        url: 'https://youtu.be/UYhWNj-gSxw'
+      },
+      {
+        image: '/public/images/quotebot.jpg',
+        title: 'How To Build a Daily News by SMS Service with NodeJS and Twilio API ',
+        url: 'https://youtu.be/9wcgmwZUK9c'
+      },
+      {
+        image: '/public/images/sms-weather.jpg',
+        title: 'How To Build a Weather By SMS App With NodeJS & Twilio',
+        url: 'https://youtu.be/doSttur8d7g'
+      },
+      {
+        image: '/public/images/shop-with-me.png',
+        title: 'How To Build a Real-Time Collaborative Shopping List App With PubNub API',
+        url: 'https://youtu.be/Nv6tsuqtNZg'
+      },
+      {
+        image: '/public/images/ionic-todo.png',
+        title: 'How To Build a Mobile Todo List App With Ionic Framework',
+        url: 'https://youtu.be/Aqck3R4ItYk'
+      }
+    ];
+
+    $scope.videos = my_videos;
+
+    //navigate to blog
+    $scope.goToVideo = function(url) {
+      window.location = url;
+    }
 
   }
   })();
