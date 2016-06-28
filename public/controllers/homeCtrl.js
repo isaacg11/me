@@ -166,8 +166,8 @@
 
     $scope.videos = my_videos;
 
-    //navigate to blog
-    $scope.goToVideo = function(url) {
+    //navigate to social media account
+    $scope.goToSocialMedia = function(url) {
       window.location = url;
     }
 
