@@ -1,3 +1,39 @@
+.section-title {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+}
+.section-title i {
+    padding: 6px 8px 6px 8px;
+    border-radius: 50%;
+    color: #dddddd;
+    border: 4px solid #dddddd;
+    margin-right: 16px;
+    font-size: 24px;
+}
+.section-title span {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.4em;
+    background: #fff;
+}
+.section-title:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #dddddd;
+}
+
+
+
+
+
+
+
 /* helpers */
 .indigo{
 	color: #3f51b5 !important;
@@ -34,6 +70,7 @@
 }
 .main-bg{
 	background-color: #3f51b5;
+	margin-bottom: 40px !important;
 }
 
 .nav-option{
@@ -43,12 +80,16 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.fa-smile-o{
-	border: 4px solid #dddddd;
-	border-radius: 50%;
-	padding: 5px 8px 5px 8px;
-	color: #dddddd;
+.nav-option:hover{
+	background-color: #3c4caa;
+	font-size: 40px;
+	font-weight: 300;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
+
 .header-line{
 	margin-top: 25px;
 	width: 100%;
@@ -240,4 +281,17 @@
 }
 .copyright{
 	font-style: bold;
+}
+
+/*resume*/
+.fa-user{
+	border: 4px solid #dddddd;
+	border-radius: 50%;
+	padding: 7px 10px 7px 10px;
+	color: #dddddd;
+}
+.description-myhistory{
+	margin-top: 0px;
+	font-size: 25px;
+	font-weight: 300;
 }

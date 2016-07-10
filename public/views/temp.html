@@ -1,0 +1,250 @@
+
+
+	<!-- aboutme/tweets start -->
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-smile-o small" aria-hidden="true"></i><span class="header-aboutme">About Me</span>
+		</div>
+		<div class="col s3 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 center">
+			<i class="fa fa-twitter small" aria-hidden="true"></i><span class="header-tweets">Tweets</span>
+		</div>
+		<div class="col s1 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s5">
+			<p class="aboutme-description">Hello! I'm <b>Isaac Grey</b> and I am a <b>Website and Application Developer</b> based in Los Angeles, CA. I enjoy building clean, useable software. Shoot me an email if you want to talk over coffee or Skype.</p>
+		</div>
+		<div class="col s3 no-padding-sides">
+			<div class="z-depth-1">
+				<a 
+					class="twitter-timeline" 
+					href="https://twitter.com/Isaacgreywebdev" 
+					data-tweet-limit="1">Tweets by Isaacgreywebdev
+				</a> 
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<!-- aboutme/tweets end -->
+
+	<!-- github repos start -->
+	<div class="row repos-section">
+		<div class="col s2 white">.</div>
+		<div class="col s8 center">
+			<div class="flex-container">
+				<div ng-repeat="r in repos" class="task-col z-depth-1 repo-card center">
+    				<p class="repo-name" ng-click="goToRepo(r.url)">{{r.name}}</p>
+    				<i class="fa fa-random repo-icon" aria-hidden="true"></i><span class="repo-icon"> {{r.forks}} <i class="fa fa-star repo-icon" aria-hidden="true"></i><span class="repo-icon"> {{r.stars}} <i class="fa fa-eye repo-icon" aria-hidden="true"></i><span class="repo-icon"> {{r.watchers}}</span></span></span>
+    				<p class="repo-description">{{r.description}}</p>
+    				<p class="repo-updated">Updated on {{r.updated | date:'short'}}</p>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+		<div class="col s4 white">.</div>
+		<div class="col s4 center">
+			<a 
+				class="waves-effect waves-light btn-large repo-btn" 
+				href="https://github.com/isaacg11" 
+				target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i> All Repositories
+			</a>
+		</div>
+		<div class="col s4 white">.</div>
+	</div>
+	<!-- github repos end -->
+
+	<!-- my skills start -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-bolt small" aria-hidden="true"></i><span class="header-aboutme">My Skills</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8">
+			<div class="flex-container">
+				<div ng-repeat="s in skills" class="task-col z-depth-1">
+    				<div class="card-image center">
+              			<img ng-src="{{s.image}}" class="skills-img">
+              			<span class="skills-title">{{s.title}}</span>
+            		</div>
+            		<div class="skills-description">
+              			<p class="skills-details">{{s.description}}</p>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-info small" aria-hidden="true"></i><span class="header-aboutme">Fun Facts</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row center">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-github medium" aria-hidden="true"></i>
+				<p class="facts-details">{{repocount}}</p>
+				<p class="facts-description">Github Repos</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-pencil-square-o medium" aria-hidden="true"></i>
+				<p class="facts-details">50</p>
+				<p class="facts-description">Blogs written</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-clock-o medium" aria-hidden="true"></i>
+				<p class="facts-details">0</p>
+				<p class="facts-description">Hours of sleep</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-coffee medium" aria-hidden="true"></i>
+				<p class="facts-details">1,000,001</p>
+				<p class="facts-description">Cups of coffee</p>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row center">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-youtube-square medium" aria-hidden="true"></i>
+				<p class="facts-details">98</p>
+				<p class="facts-description">Youtube videos</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-globe medium" aria-hidden="true"></i>
+				<p class="facts-details">2</p>
+				<p class="facts-description">Countries traveled</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-tree medium" aria-hidden="true"></i>
+				<p class="facts-details">4</p>
+				<p class="facts-description">Mountains snowboarded</p>
+			</div>
+		</div>
+		<div class="col s2">
+			<div class="facts-card z-depth-1">
+				<i class="fa fa-television medium" aria-hidden="true"></i>
+				<p class="facts-details">999</p>
+				<p class="facts-description">Hours watching Netflix</p>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<!-- my skills end -->
+
+	<!-- my blogs start -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-pencil small" aria-hidden="true"></i><span class="header-aboutme">Latest Blogs</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8 center">
+			<div class="flex-container">
+				<div ng-repeat="b in blogs" class="task-col-6 tutorial">
+    				<div class="card-image center">
+              			<img 
+              				ng-src="{{b.image}}" 
+              				class="tutorial-img" 
+              				title="{{b.title}}"
+              				ng-click="goToBlog(b.url)"/>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<!-- my blogs end -->
+
+	<!-- my videos start -->
+	<div class="row skills-section">
+		<div class="col s2 white">.</div>
+		<div class="col s2">
+			<i class="fa fa-play-circle small" aria-hidden="true"></i><span class="header-aboutme">My Videos</span>
+		</div>
+		<div class="col s6 no-padding-sides">
+			<div class="header-line"></div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<div class="row">
+		<div class="col s2 white">.</div>
+		<div class="col s8 center">
+			<div class="flex-container">
+				<div ng-repeat="v in videos" class="task-col-6 tutorial">
+    				<div class="card-image center">
+              			<img 
+              				ng-src="{{v.image}}" 
+              				class="tutorial-img" 
+              				title="{{v.title}}"
+              				ng-click="goToVideo(v.url)"/>
+            		</div>
+  				</div>
+			</div>
+		</div>
+		<div class="col s2 white">.</div>
+	</div>
+	<!-- my videos end -->
+
+	<!-- footer start -->
+	<footer class="page-footer ftr">
+        <div class="row">
+            <div class="col s3 indigo">.</div>
+            <div class="col s6 center">
+            	<div class="container">
+              	<p class="footer-header">LET'S CONNECT</p>
+              	<p class="footer-description">I'm very social and I'd love to hear from you! Feel free to send me an email, find me on LinkedIn, follow me on Twitter and join me on Facebook.</p>
+              	<span><i class="fa fa-twitter-square medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://twitter.com/Isaacgreywebdev')" title="Twitter"></i><span><i class="fa fa-facebook medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://www.facebook.com/isaac.grey.3')" title="Facebook"></i><span><i class="fa fa-linkedin medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://www.linkedin.com/in/isaac-grey-bab63a102')" title="LinkedIn"></i><span><i class="fa fa-google-plus medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://plus.google.com/u/2/108912510089462997539')" title="GooglePlus"></i><span><i class="fa fa-github medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://github.com/isaacg11')" title="Github"></i></span></span></span></span></span>
+              	</div>
+            </div>
+            <div class="col s3 indigo">.</div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container center copyright">
+            www.isaacgrey.me © 2016 - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->

@@ -6,9 +6,13 @@
 
 
 function Config($stateProvider, $urlRouterProvider, $locationProvider) {
-  $stateProvider.state('Home',{
+  $stateProvider.state('home',{
     url: '/',
     templateUrl: './public/views/home.html'
+  }).
+  state('resume',{
+    url: '/resume',
+    templateUrl: './public/views/resume.html'
   });
   
   $urlRouterProvider.otherwise('/');
