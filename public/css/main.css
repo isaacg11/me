@@ -1,3 +1,5 @@
+
+/*home*/
 .section-title {
     position: relative;
     margin-bottom: 1em;
@@ -27,8 +29,28 @@
     width: 100%;
     border-bottom: 4px solid #dddddd;
 }
-
-
+span.ago {
+    display: block;
+    color: #777777;
+    font-size: 12px;
+}
+.featured-media .card {
+    text-align: center;
+    min-height: 230px;
+}
+.featured-media .card .updated-on {
+    color: #CCCCCC;
+    font-weight: 300;
+    font-size: 13px;
+}
+.featured-media .card .card-action {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.featured-media .btn-large span {
+    font-size: 18px;
+}
 
 
 
@@ -90,7 +112,7 @@
 	cursor: pointer;
 }
 
-.header-line{
+/*.header-line{
 	margin-top: 25px;
 	width: 100%;
 	height: 5px;
@@ -284,7 +306,7 @@
 }
 
 /*resume*/
-.fa-user{
+/*.fa-user{
 	border: 4px solid #dddddd;
 	border-radius: 50%;
 	padding: 7px 10px 7px 10px;
@@ -293,5 +315,5 @@
 .description-myhistory{
 	margin-top: 0px;
 	font-size: 25px;
-	font-weight: 300;
-}
+	font-weight: 300;*/
+}*/
