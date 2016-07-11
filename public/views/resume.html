@@ -1,97 +1,178 @@
 <!-- page start -->
 <div ng-controller="homeCtrl">
 
-	<!-- fixed email button start -->
-	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    	<a class="btn-floating btn-large red" ng-click="test()">
-      		<i class="fa fa-envelope" aria-hidden="true"></i>
-    	</a>
-  	</div>
-  	<!-- end fixed email button -->
-
-	<!-- banner start -->
-	<div class="row main-bg z-depth-1">
-		<div class="col s12">
-			<div class="row">
-				<div class="col s12 center">
-					<img src="/public/images/me1.jpg" class="profile-img"/>
-					<h5 class="profile-name">Isaac Grey</h5>
-					<span class="profile-title"><em>fullstack web developer</em></span>
-				</div>
-			</div>
-			<nav>
-				<div class="nav-wrapper">
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul class="hide-on-med-and-down">
-        				<li><a href="sass.html">about me</a></li>
-        				<li><a href="badges.html">resume</a></li>
-        				<li><a href="collapsible.html">contact</a></li>
-        				<li><a href="mobile.html">resources</a></li>
-      				</ul>
-				</div>
-			</nav>
-			<!-- <div class="row center">
-				<div class="col s2 indigo">.</div>
-				<div class="col s2">
-					<p class="nav-option" ui-sref="home">about me</p>
-				</div>
-				<div class="col s2">
-					<p class="nav-option">resume</p>
-				</div>
-				<div class="col s2">
-					<p class="nav-option">contact</p>
-				</div>
-				<div class="col s2">
-					<p class="nav-option">resources</p>
-				</div>
-				<div class="col s2 indigo">.</div>
-			</div> -->
-		</div>
-	</div>
-	<!-- banner end -->
-
-	<!-- my history start -->
-	<div class="row">
-		<div class="col s2 white">.</div>
-		<div class="col s2">
-			<i class="fa fa-user small" aria-hidden="true"></i><span class="header-aboutme">My History</span>
-		</div>
-		<div class="col s6 no-padding-sides">
-			<div class="header-line"></div>
-		</div>
-		<div class="col s2 white">.</div>
-	</div>
-	<div class="row">
-		<div class="col s2 white">.</div>
-		<div class="col s8">
-			<p class="description-myhistory center">Welcome to my timeline. My <b>work experience</b> and <b>education</b> details are quickly explained here. Take a moment to check out!</p>
-		</div>
-		<div class="col s2 white">.</div>
-	</div>
-	<!-- my history end -->
-
-
-
-	<!-- footer start -->
-	<!-- <footer class="page-footer ftr">
-        <div class="row">
-            <div class="col s3 indigo">.</div>
-            <div class="col s6 center">
-            	<div class="container">
-              	<p class="footer-header">LET'S CONNECT</p>
-              	<p class="footer-description">I'm very social and I'd love to hear from you! Feel free to send me an email, find me on LinkedIn, follow me on Twitter and join me on Facebook.</p>
-              	<span><i class="fa fa-twitter-square medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://twitter.com/Isaacgreywebdev')" title="Twitter"></i><span><i class="fa fa-facebook medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://www.facebook.com/isaac.grey.3')" title="Facebook"></i><span><i class="fa fa-linkedin medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://www.linkedin.com/in/isaac-grey-bab63a102')" title="LinkedIn"></i><span><i class="fa fa-google-plus medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://plus.google.com/u/2/108912510089462997539')" title="GooglePlus"></i><span><i class="fa fa-github medium footer-icon" aria-hidden="true" ng-click="goToSocialMedia('https://github.com/isaacg11')" title="Github"></i></span></span></span></span></span>
-              	</div>
+    <!-- banner start -->
+    <div class="row main-bg z-depth-1">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 center">
+                    <img src="/public/images/me1.jpg" class="profile-img"/>
+                    <h5 class="profile-name">Isaac Grey</h5>
+                    <span class="profile-title"><em>fullstack web developer</em></span>
+                </div>
             </div>
-            <div class="col s3 indigo">.</div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="container center copyright">
-            www.isaacgrey.me © 2016 - All Rights Reserved
+            <div class="row center">
+                <div class="col s2 indigo-blend">.</div>
+                <div class="col s2">
+                    <p class="nav-option" ui-sref="home">about me</p>
+                </div>
+                <div class="col s2">
+                    <p class="nav-option">resume</p>
+                </div>
+                <div class="col s2">
+                    <p class="nav-option">contact</p>
+                </div>
+                <div class="col s2">
+                    <p class="nav-option">resources</p>
+                </div>
+                <div class="col s2 indigo-blend">.</div>
             </div>
         </div>
-    </footer> -->
-    <!-- footer end -->
+    </div>
+    <!-- banner end -->
+
+    <!-- my experience start -->
+    <div class="section fade-in" id="index-banner" style="display: block; opacity: 1;">
+        <div class="container">
+            <div class="row center">
+                <div class="col s12 m12">
+                    <h2 class="header indigo-text lighten-1 section-title">
+                    <span>
+                        <i class="fa fa-user"></i> My Experience
+                    </span>
+                    </h2>
+
+                    <p class="flow-text">
+                        Welcome to my timeline. My <strong class="indigo-text lighten-1">work experience</strong> and <strong class="indigo-text lighten-1">education</strong> details are available here. Take a moment to <strong>check it all out</strong>!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my experience end -->
+
+    <!-- my history start -->
+    <div class="container">
+        <div class="section resources">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h2 class="header indigo-text lighten-1 section-title">
+                        <span><i class="fa fa-file"></i>Download My CV</span>
+                    </h2>
+                    <p>
+                        You can download my CV in pdf format if you would like. Just let me know if you have any questions, i'm happy to help!
+                    </p>
+                    <a 
+                        class="waves-effect waves-light indigo btn-large" 
+                        href="https://docs.google.com/document/d/1td2yjcyqesnNoLLn2pn-yZ6qlYRdgE2__FRfG8Cn71U/edit?usp=sharing"
+                        target="_blank">Download CV
+                    </a>
+                    <h2 class="header indigo-text lighten-1 section-title">
+                        <span><i class="fa fa-linkedin"></i>LinkedIn Profile</span>
+                    </h2>
+                    <p>You can view my connections, work, skills, interests, and more.</p>
+                    <a 
+                        class="waves-effect waves-light btn-large" 
+                        href="https://www.linkedin.com/in/isaac-grey-bab63a102"
+                        target="_blank">My LinkedIn Profile
+                    </a>
+                    <h2 class="header indigo-text lighten-1 section-title">
+                        <span><i class="fa fa-code"></i>Programming</span>
+                    </h2>
+                    <p>
+                        I specialize in fullstack JavaScript programming, here's a list of what I can do.
+                    </p>
+                    <div class="skills">
+                        <a class="waves-effect waves-light btn indigo">HTML</a>
+                        <a class="waves-effect waves-light btn indigo">CSS</a>
+                        <a class="waves-effect waves-light btn indigo">JavaScript</a>
+                        <a class="waves-effect waves-light btn indigo">jQuery</a>
+                        <a class="waves-effect waves-light btn indigo">AngularJS</a>
+                        <a class="waves-effect waves-light btn indigo">ReactJS</a>
+                        <a class="waves-effect waves-light btn indigo">NodeJS</a>
+                        <a class="waves-effect waves-light btn indigo">MongoDB</a>
+                        <a class="waves-effect waves-light btn indigo">Express</a>
+                        <a class="waves-effect waves-light btn indigo">Ionic Framework</a>
+                        <a class="waves-effect waves-light btn indigo">Bootstrap</a>
+                        <a class="waves-effect waves-light btn indigo">Material Design</a>
+                        <a class="waves-effect waves-light btn indigo">NoSQL</a>
+                        <a class="waves-effect waves-light btn indigo">REST APIs</a>
+                        <a class="waves-effect waves-light btn indigo">Gulp</a>
+                    </div>
+                    <h2 class="header indigo-text lighten-1 section-title">
+                        <span><i class="fa fa-wrench"></i>Web Tools</span>
+                    </h2>
+                    <div class="skills">
+                        <a class="waves-effect waves-light btn indigo lighten-1">WordPress</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">Heroku</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">Firebase</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">Stamplay</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">Amazon Web Services</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">IBM Bluemix</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">Google APIs</a>
+                        <a class="waves-effect waves-light btn indigo lighten-1">NPM</a>
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h2 class="header indigo-text lighten-1 section-title">
+                        <span><i class="fa fa-graduation-cap"></i>History</span>
+                    </h2>
+                    <ul class="cbp_tmtimeline">
+                        <li>
+                            <time class="cbp_tmtime">
+                                <span>October 2013</span>
+                                <span></span>
+                            </time>
+                            <div class="cbp_tmicon fa fa-globe"></div>
+                            <div class="cbp_tmlabel z-depth-2">
+                                <h2>Senior Web Developer at Scrochsoft Ltd.</h2>
+                                <p class="light-text">Birmingham, United Kingdom</p>
+                                <p class="light-text">Managing Projects, developing backend systems, basically work with PHP, SCSS, managing databases, creating bespoke projects and build advanced iOS and Android hybrid apps.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time class="cbp_tmtime">
+                                <span>November 2012</span>
+                                <span></span>
+                            </time>
+                            <div class="cbp_tmicon fa fa-globe"></div>
+                            <div class="cbp_tmlabel z-depth-2">
+                                <h2>Leading PHP Backend Developer at TheBottomLine, Broome</h2>
+                                <p class="light-text">As leading developer build advanced CMS using Yii Framework (https://github.com/TBL-CMS/Core)</p>
+                                <p class="light-text">Working with various API’s like Vebra Live, Twitter, Paypal, Facebook (0Auth), CampaignMonitor etc.  Managed company's servers, deploying sites using Github version control system.  Gained knowlege of some other advanced PHP frameworks like Wax Framework (www.php-wax.com).</p>
+                            </div>
+                        </li>     
+                        <li>
+                            <time class="cbp_tmtime">
+                                <span>March 2012</span>
+                                <span></span>
+                            </time>
+                            <div class="cbp_tmicon fa fa-globe"></div>
+                            <div class="cbp_tmlabel z-depth-2">
+                                <h2>Coder Camps Programming Academy</h2>
+                                <p class="light-text">San Fransisco, CA</p>
+                                <p class="light-text">While at Coder Camps I was educated in full stack Javascript fundamentals, including CRUD operations, error handling, debugging, SEO, cross-browser compatibility, unit testing, HTTP, AJAX, APIs, database administration, and system security.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time class="cbp_tmtime">
+                                <span>August 2011</span>
+                                <span></span>
+                            </time>
+                            <div class="cbp_tmicon fa fa-globe"></div>
+                            <div class="cbp_tmlabel z-depth-2">
+                                <h2>Software By Isaac, LLC</h2>
+                                <p class="light-text">Los Angeles, CA</p>
+                                <p class="light-text">Freelance web development of custom websites and mobile applications.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my history end -->
+
+
 </div>
 <!-- page end -->
