@@ -13,6 +13,10 @@ function Config($stateProvider, $urlRouterProvider, $locationProvider) {
   state('resume',{
     url: '/resume',
     templateUrl: './public/views/resume.html'
+  }).
+  state('contact',{
+    url: '/contact',
+    templateUrl: './public/views/contact.html'
   });
   
   $urlRouterProvider.otherwise('/');

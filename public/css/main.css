@@ -272,6 +272,14 @@ footer .footer-copyright {
     border-width: 10px;
     top: 10px;
 }
+.envelope-2{
+    padding: 10px 10px 10px 10px !important;
+    border-radius: 50%;
+    color: #dddddd;
+    border: 4px solid #dddddd;
+    margin-right: 16px;
+    font-size: 24px;
+}
 /* helpers */
 .indigo-blend{
 	color: #3f51b5 !important;
