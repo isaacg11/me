@@ -150,6 +150,12 @@ footer .footer-copyright {
 }
 .fa-linkedin{
 	padding: 10px 12px 10px 12px !important;
+    color: #dddddd;
+    margin-right: 16px;
+    font-size: 24px;
+}
+.v2{
+    padding: 10px 12px 10px 12px !important;
     border-radius: 50%;
     color: #dddddd;
     border: 4px solid #dddddd;
