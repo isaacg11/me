@@ -280,6 +280,20 @@ footer .footer-copyright {
     margin-right: 16px;
     font-size: 24px;
 }
+.blog{
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.blog-description{
+    font-size: 20px;
+    cursor: pointer;
+}
+.blog-description:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
 /* helpers */
 .indigo-blend{
 	color: #3f51b5 !important;

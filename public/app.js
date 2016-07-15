@@ -17,6 +17,10 @@ function Config($stateProvider, $urlRouterProvider, $locationProvider) {
   state('contact',{
     url: '/contact',
     templateUrl: './public/views/contact.html'
+  }).
+  state('archives',{
+    url: '/archives',
+    templateUrl: './public/views/archives.html'
   });
   
   $urlRouterProvider.otherwise('/');
